@@ -9,11 +9,21 @@
 Soft link a file/directory with python site-packages directory.
 Useful during development.
 
+Currently only projects that use `setup` to package releases are supported.
+
 Installation via pip:
 ```bash
 pip install pyslink
 ```
-Soft link a package:
+Create soft link a package:
 ```bash
-pyslink path/to/main/module
+pyslink create path/to/main/module
 ```
+Remove soft link a package
+```
+pyslink remove path/to/main/module
+```
+
+## TODO
+
+- [ ] Support pyproject.toml
